@@ -142,4 +142,12 @@ a {
 .active > .list-el .list-text {
   opacity: 100%;
 }
+
+.middle > .list-el .decoration {
+  width: 12px;
+}
+
+.middle > .list-el .list-text {
+  opacity: 50%;
+}
 /*# sourceMappingURL=index.css.map */

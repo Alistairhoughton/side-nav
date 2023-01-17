@@ -111,8 +111,6 @@ a {
   width: 20px;
 }
 
-
-
 .active > .list-el {
   .decoration {
     width: 20px;
@@ -120,6 +118,16 @@ a {
   }
   .list-text {
     opacity: 100%;
+  }
+}
+
+.middle >.list-el {
+  .decoration {
+    width: 12px;
+  }
+
+  .list-text {
+    opacity: 50%;
   }
 }
 
