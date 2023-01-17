@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-one {
+  width: 100%;
+  height: 100vh;
+  background-color: #cfcfcf;
+}
+
+.section-two {
+  width: 100%;
+  height: 100vh;
+  background-color: #9c9c9c;
+}
+
+.section-three {
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.section-four {
+  width: 100%;
+  height: 100vh;
+  background-color: #8a8a8a;
+}
+
+.side-nav {
+  position: fixed;
+  top: 35%;
+  left: 0;
+  margin-left: 110px;
+  width: auto;
+  height: auto;
+}
+
+.nav-link-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  padding: 40px 40px 40px 0;
+}
+
+.list-el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 17px 0 17px 0;
+  width: auto;
+  cursor: pointer;
+}
+
+.decoration {
+  height: 1px;
+  background-color: black;
+  width: 8px;
+  border-radius: 1px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  cursor: pointer;
+  opacity: 50%;
+  transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+}
+
+.list-text {
+  color: black;
+  opacity: 0;
+  transition: 0.25s ease-in;
+  -moz-transition: 0.25s ease-in;
+  -webkit-transition: 0.25s ease-in;
+}
+
+.nav-link-holder:hover > .nav-link > .list-el > .list-text {
+  opacity: 50%;
+}
+
+.nav-link-holder > .nav-link:hover > .list-el > .list-text {
+  opacity: 100%;
+}
+
+.nav-link-holder:hover > .nav-link > .list-el > .decoration {
+  width: 12px;
+}
+
+.nav-link-holder > .nav-link:hover > .list-el > .decoration {
+  opacity: 100%;
+  width: 20px;
+}
+
+.active > .list-el .decoration {
+  width: 20px;
+  opacity: 100%;
+}
+
+.active > .list-el .list-text {
+  opacity: 100%;
+}
+/*# sourceMappingURL=index.css.map */
