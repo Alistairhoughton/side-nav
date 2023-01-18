@@ -6,74 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Side Navigation</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
   </head>
   <body>
     <main class="main-holder">
       <nav class="side-nav">
         <ul class="nav-link-holder">
-
-          <li class="list-el">
-            <a class="nav-link" href="#section-one"
+          <li id="top" class="list-el active">
+            <a class="nav-link" href="#top-tag"
               ><div class="decoration"></div>
-             <span class="list-text">Top</span></a
+              <span class="list-text">Top</span></a
             >
           </li>
 
-            <li class="list-el">
-            <a class="nav-link" href="#section-two"
+          <li id="overview" class="list-el">
+            <a class="nav-link" href="#overview-tag"
               ><div class="decoration"></div>
-             <span class="list-text">Top</span></a
+              <span class="list-text">Overview</span></a
             >
           </li>
 
-          <li class="list-el">
-            <a class="nav-link" href="#section-three"
+          <li id="research" class="list-el">
+            <a class="nav-link" href="#research-tag"
               ><div class="decoration"></div>
-             <span class="list-text">Top</span></a
+              <span class="list-text">Research</span></a
             >
           </li>
 
-            <li class="list-el">
-            <a class="nav-link" href="#section-four"
+          <li id="direction" class="list-el">
+            <a class="nav-link" href="#direction-tag"
               ><div class="decoration"></div>
-             <span class="list-text">Top</span></a
+              <span class="list-text">Direction</span></a
             >
           </li>
 
-           <li class="list-el">
-            <a class="nav-link" href="#section-four"
+          <li id="wireframe" class="list-el">
+            <a class="nav-link" href="#wireframe-tag"
               ><div class="decoration"></div>
-             <span class="list-text">Top</span></a
+              <span class="list-text">Wireframe</span></a
             >
           </li>
 
-           <li class="list-el">
-            <a class="nav-link" href="#section-four"
+          <li id="ui" class="list-el">
+            <a class="nav-link" href="#ui-tag"
               ><div class="decoration"></div>
-             <span class="list-text">Top</span></a
+              <span class="list-text">UI</span></a
             >
           </li>
 
-           <li class="list-el">
-            <a class="nav-link" href="#section-four"
+          <li id="dev" class="list-el">
+            <a class="nav-link" href="#dev-tag"
               ><div class="decoration"></div>
-             <span class="list-text">Top</span></a
+              <span class="list-text">Dev</span></a
             >
           </li>
-
-      
-
         </ul>
       </nav>
-      <section id="section-one" class="section-one"></section>
-      <section id="section-two" class="section-two"></section>
-      <section id="section-three" class="section-three"></section>
-      <section id="section-four" class="section-four"></section>
+      <section id="top-tag" class="section-one card" data-name="top">
+        <h2>Top</h2>
+      </section>
+      <section id="overview-tag" class="section-two card" data-name="overview">
+        <h2>Overview</h2>
+      </section>
+      <section
+        id="research-tag"
+        class="section-three card"
+        data-name="research"
+      >
+        <h2>Research</h2>
+      </section>
+      <section
+        id="direction-tag"
+        class="section-five card"
+        data-name="direction"
+      >
+        <h2>Direction</h2>
+      </section>
+      <section
+        id="wireframe-tag"
+        class="section-six card"
+        data-name="wire-frame"
+      >
+        <h2>Wireframe</h2>
+      </section>
+      <section id="ui-tag" class="section-seven card" data-name="ui">
+        <h2>UI</h2>
+      </section>
+      <section id="dev-tag" class="section-eight card" data-name="dev">
+        <h2>Dev</h2>
+      </section>
     </main>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.7.1.min.js"
-    ></script>
+    <script src="index.js"></script>
   </body>
 </html>

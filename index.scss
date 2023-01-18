@@ -20,6 +20,14 @@ a {
   align-items: center;
 }
 
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
 .section-one {
   width: 100%;
   height: 100vh;
@@ -102,7 +110,7 @@ a {
     opacity: 50%;
 }
 .decoration {
-  width: 12px
+  width: 14px
 }
 } 
 
@@ -142,53 +150,5 @@ a {
   animation-direction: normal;
 }
 
-/* animation  */
-
-@keyframes grow {
-  from {
-    width: 80px;
-    opacity: 50%;
-  }
-
-  50% {
-    width: 140px;
-    opacity: 100%;
-  }
-
-  to {
-    width: 130px;
-    opacity: 100%;
-  }
-}
-
-/* animation  */
-
-@keyframes grow-out {
-  from {
-    width: 130px;
-    opacity: 100%;
-  }
-
-  50% {
-    width: 70px;
-    opacity: 50%
-  }
-
-  to {
-    width: 80px;
-    opacity: 50%;
-  }
-}
-
-
-
-
-.line:hover {
-  animation-name: grow;
-  animation-duration: 0.5s;
-  animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
-  animation-fill-mode: forwards;
-  animation-direction: normal;
-}
 
 

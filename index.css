@@ -30,6 +30,20 @@ a {
           align-items: center;
 }
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
 .section-one {
   width: 100%;
   height: 100vh;
@@ -122,7 +136,7 @@ a {
 }
 
 .nav-link-holder:hover .decoration {
-  width: 12px;
+  width: 14px;
 }
 
 .nav-link:hover .list-text {
@@ -152,79 +166,6 @@ a {
   opacity: 50%;
   -webkit-animation-name: grow-out;
           animation-name: grow-out;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
-          animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-}
-
-/* animation  */
-@-webkit-keyframes grow {
-  from {
-    width: 80px;
-    opacity: 50%;
-  }
-  50% {
-    width: 140px;
-    opacity: 100%;
-  }
-  to {
-    width: 130px;
-    opacity: 100%;
-  }
-}
-@keyframes grow {
-  from {
-    width: 80px;
-    opacity: 50%;
-  }
-  50% {
-    width: 140px;
-    opacity: 100%;
-  }
-  to {
-    width: 130px;
-    opacity: 100%;
-  }
-}
-
-/* animation  */
-@-webkit-keyframes grow-out {
-  from {
-    width: 130px;
-    opacity: 100%;
-  }
-  50% {
-    width: 70px;
-    opacity: 50%;
-  }
-  to {
-    width: 80px;
-    opacity: 50%;
-  }
-}
-@keyframes grow-out {
-  from {
-    width: 130px;
-    opacity: 100%;
-  }
-  50% {
-    width: 70px;
-    opacity: 50%;
-  }
-  to {
-    width: 80px;
-    opacity: 50%;
-  }
-}
-
-.line:hover {
-  -webkit-animation-name: grow;
-          animation-name: grow;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
