@@ -7,6 +7,8 @@ setTimeout(function () {
   navBar.classList.add("show");
 }, 400);
 
+// setting active class on click
+
 links.forEach((link) => {
   link.addEventListener("click", () => {
     links.forEach((el) => el.classList.remove("active"));
@@ -33,5 +35,5 @@ const callback = (entries, observer) => {
 };
 
 let observer = new IntersectionObserver(callback, options);
-
 cards.forEach((card) => observer.observe(card));
+
