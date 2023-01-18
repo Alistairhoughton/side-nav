@@ -75,20 +75,20 @@ a {
   padding: 40px 40px 40px 0;
 }
 
-.list-el {
+.nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 20px;
   padding: 17px 0 17px 0;
   width: auto;
@@ -112,42 +112,126 @@ a {
 .list-text {
   color: black;
   opacity: 0;
-  transition: 0.25s ease-in;
-  -moz-transition: 0.25s ease-in;
-  -webkit-transition: 0.25s ease-in;
+  transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
 }
 
-.nav-link-holder:hover > .nav-link > .list-el > .list-text {
+.nav-link-holder:hover .list-text {
   opacity: 50%;
 }
 
-.nav-link-holder > .nav-link:hover > .list-el > .list-text {
-  opacity: 100%;
-}
-
-.nav-link-holder:hover > .nav-link > .list-el > .decoration {
+.nav-link-holder:hover .decoration {
   width: 12px;
 }
 
-.nav-link-holder > .nav-link:hover > .list-el > .decoration {
-  opacity: 100%;
-  width: 20px;
-}
-
-.active > .list-el .decoration {
-  width: 20px;
+.nav-link:hover .list-text {
   opacity: 100%;
 }
 
-.active > .list-el .list-text {
+.nav-link:hover .decoration {
+  width: 25px;
   opacity: 100%;
 }
 
-.middle > .list-el .decoration {
-  width: 12px;
+.active > .nav-link .decoration {
+  width: 25px;
+  opacity: 100%;
 }
 
-.middle > .list-el .list-text {
+.active > .nav-link .list-text {
+  opacity: 100%;
+}
+
+.line {
+  width: 80px;
+  height: 10px;
+  background-color: red;
+  -webkit-transform-origin: left;
+          transform-origin: left;
   opacity: 50%;
+  -webkit-animation-name: grow-out;
+          animation-name: grow-out;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+          animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+/* animation  */
+@-webkit-keyframes grow {
+  from {
+    width: 80px;
+    opacity: 50%;
+  }
+  50% {
+    width: 140px;
+    opacity: 100%;
+  }
+  to {
+    width: 130px;
+    opacity: 100%;
+  }
+}
+@keyframes grow {
+  from {
+    width: 80px;
+    opacity: 50%;
+  }
+  50% {
+    width: 140px;
+    opacity: 100%;
+  }
+  to {
+    width: 130px;
+    opacity: 100%;
+  }
+}
+
+/* animation  */
+@-webkit-keyframes grow-out {
+  from {
+    width: 130px;
+    opacity: 100%;
+  }
+  50% {
+    width: 70px;
+    opacity: 50%;
+  }
+  to {
+    width: 80px;
+    opacity: 50%;
+  }
+}
+@keyframes grow-out {
+  from {
+    width: 130px;
+    opacity: 100%;
+  }
+  50% {
+    width: 70px;
+    opacity: 50%;
+  }
+  to {
+    width: 80px;
+    opacity: 50%;
+  }
+}
+
+.line:hover {
+  -webkit-animation-name: grow;
+          animation-name: grow;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+          animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
 }
 /*# sourceMappingURL=index.css.map */

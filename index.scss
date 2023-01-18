@@ -60,16 +60,18 @@ a {
   padding: 40px 40px 40px 0;
 }
 
-.list-el {
+.nav-link {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
   gap: 20px;
   padding: 17px 0 17px 0;
   width: auto;
   cursor: pointer;
 }
+
+
 
 .decoration {
   height: 1px;
@@ -82,54 +84,111 @@ a {
   transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
   -webkit-transition: 0.25s ease-in-out;
+  
 }
 
 .list-text {
   color: black;
   opacity: 0;
-  transition: 0.25s ease-in;
-  -moz-transition: 0.25s ease-in;
-  -webkit-transition: 0.25s ease-in;
+  transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
 }
 
 // Hover events 
 
-.nav-link-holder:hover > .nav-link > .list-el > .list-text {
+.nav-link-holder:hover  {
+.list-text {
+    opacity: 50%;
+}
+.decoration {
+  width: 12px
+}
+} 
+
+.nav-link:hover {
+  .list-text {
+    opacity: 100%;
+  }
+  .decoration {
+    width: 25px;
+    opacity: 100%;
+  }
+}
+
+.active > .nav-link {
+  .decoration {
+    width: 25px;
+    opacity: 100%;
+  }
+  .list-text {
+    opacity: 100%;
+  }
+}
+
+// animation 
+
+
+.line {
+  width: 80px;
+  height: 10px;
+  background-color: red;
+  transform-origin: left;
   opacity: 50%;
+  animation-name: grow-out;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+  animation-fill-mode: forwards;
+  animation-direction: normal;
 }
 
-.nav-link-holder > .nav-link:hover > .list-el > .list-text {
-  opacity: 100%;
-}
+/* animation  */
 
-.nav-link-holder:hover > .nav-link > .list-el > .decoration {
-  width: 12px;
-}
+@keyframes grow {
+  from {
+    width: 80px;
+    opacity: 50%;
+  }
 
-.nav-link-holder > .nav-link:hover > .list-el > .decoration {
-  opacity: 100%;
-  width: 20px;
-}
-
-.active > .list-el {
-  .decoration {
-    width: 20px;
+  50% {
+    width: 140px;
     opacity: 100%;
   }
-  .list-text {
+
+  to {
+    width: 130px;
     opacity: 100%;
   }
 }
 
-.middle >.list-el {
-  .decoration {
-    width: 12px;
+/* animation  */
+
+@keyframes grow-out {
+  from {
+    width: 130px;
+    opacity: 100%;
   }
 
-  .list-text {
+  50% {
+    width: 70px;
+    opacity: 50%
+  }
+
+  to {
+    width: 80px;
     opacity: 50%;
   }
 }
 
+
+
+
+.line:hover {
+  animation-name: grow;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
 
 

@@ -1,4 +1,4 @@
-const links = document.querySelectorAll(".nav-link");
+const links = document.querySelectorAll(".list-el");
 const container = document.querySelector(".nav-link-holder");
 
 links.forEach((link) => {
@@ -8,14 +8,6 @@ links.forEach((link) => {
   });
 });
 
-
-
-// addMiddle = () => {
-//  links.forEach((el) => el.classList.toggle("middle")) 
-// }
-
-// container.addEventListener("mouseover", (addMiddle));
-// container.addEventListener("mouseout", (addMiddle));
 
 
 
