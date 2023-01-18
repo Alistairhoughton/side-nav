@@ -92,9 +92,18 @@ a {
   position: fixed;
   top: 30%;
   left: 0;
-  margin-left: 110px;
+  margin-left: 50px;
   width: auto;
   height: auto;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  margin-left: 110px;
+  transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
 }
 
 .nav-link-holder {

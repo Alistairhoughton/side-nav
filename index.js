@@ -1,6 +1,12 @@
 const links = document.querySelectorAll(".list-el");
 const container = document.querySelector(".nav-link-holder");
 const cards = document.querySelectorAll(".card");
+const navBar = document.querySelector(".side-nav")
+
+setTimeout(function () {
+  navBar.classList.add("show")
+}, 400);
+
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
