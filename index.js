@@ -33,4 +33,6 @@ const callback = (entries, observer) => {
 
 let observer = new IntersectionObserver(callback, options);
 
-
+cards.forEach((card) => observer.observe(card));
+//if section is intersecting
+//add class of active to corresponding link
