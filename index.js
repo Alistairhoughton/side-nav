@@ -12,17 +12,18 @@ links.forEach((link) => {
 IntersectionObserver 
 
 let options = {
-  threshold: 0.5,
+  threshold: 0.7,
 };
 
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      document.querySelector(".list-el").classList.remove("active");
+      links.forEach((el) => el.classList.remove("active"));
       const id = entry.target.getAttribute("data-name");
       console.log(id);
-      var appendClass = document
-        .querySelector(`li[id="${id}]"`)
+      // console.log(appendClass);
+      const appendClass = document
+        .querySelector(`li[id=${id}]`)
         .classList.add("active");
       console.log(appendClass);
       // this is where I want to append active
