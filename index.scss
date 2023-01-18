@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +15,11 @@ html {
 
 a {
   text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 }
 
 /* scrollbar styling */
@@ -132,6 +140,7 @@ a {
   transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
   -webkit-transition: 0.25s ease-in-out;
+  font-family: 'Poppins', sans-serif;
 }
 
 // Hover events
